@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Twk Everett', 'Samsung Sharp Sans';
+    box-sizing: border-box;
+}
+
+html {
+    touch-action: none;
+}
+
+body {
+    max-height: 100dvh;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.cursor {
+    padding: 2rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100%;
+    background-color: #fff;
+    position: absolute;
+    user-select: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: 1rem
+}
+
+.img-container {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+
+@media screen and (max-width: 768px) {
+    .img-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .img-container {
+        width: 350px;
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
